@@ -183,7 +183,7 @@ function Lottery(s) {
 }
 
 function GetCookie() {
-  var iQIYI = $request.url.match(/authcookie=([A-Za-z0-9]+)/);
+  var iQIYI = $request.url.match(/authCookie=([A-Za-z0-9]+)/);
   if (iQIYI) {
     if ($nobyda.read("CookieQY")) {
       if ($nobyda.read("CookieQY") != iQIYI[1]) {
